@@ -1,29 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import "tailwindcss";
 
-
 @theme {
-/* Primary Colors */
---color-lightCoral: #E97D80;    /* Key color (Light Coral / Rose Pink) */
---color-ghostWhite: #FBFCFF;    /* onKey color (Ghost White) */
---color-mistyRose: #F9D7D8;     /* Container color (Misty Rose / Pale Pink) */
---color-darkMaroon: #411012;    /* onContainer color (Dark Maroon / Burgundy) */
-
+  /* Primary Colors */
+  --color-lightcoral: #e97d80; /* Key color  */
+  --color-ghostWhite: #fbfcff; /* onKey color */
+  --color-paleRose: #f9d7d8; /* Container color */
+  --color-darkMaroon: #411012; /* onContainer color */
 
   /* Secondary Colors */
---color-lavenderGray: #B3B3D8;  /* Key color (Lavender Gray / Light Periwinkle) */
---color-ghostWhite: #FBFCFF;    /* onKey color (Ghost White) */
---color-aliceBlue: #EFF1F9;     /* Container color (Alice Blue / Pale Lavender) */
---color-charcoal: #2A2A44;      /* onContainer color (Charcoal Blue / Gunmetal) */
+  --color-inactiveGray: #b3b3d8; /* Key color */
+  --color-ghostWhite: #fbfcff; /* onKey color */
+  --color-aliceBlue: #eff1f9; /* Container color */
+  --color-charcoal: #2a2a44; /* onContainer color */
 
-    /* Secondary Colors 2 */
---color-licorice: #231F20;      /* Key color (Licorice / Raisin Black) */
---color-ghostWhite: #FBFCFF;    /* onKey color (Ghost White) */
---color-thistle: #EAD4DA;       /* Container color (Thistle / Pale Mauve) */
---color-licorice: #231F20;      /* onContainer color (Licorice / Raisin Black) */
+  /* Secondary Colors 2 */
+  --color-grunge: #231f20; /* Key color & onContainer color*/
+  --color-ghostWhite: #fbfcff; /* onKey color */
+  --color-thistle: #ead4da; /* Container color */
 
-
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-heading: "Poppins", sans-serif;
-
-  --radius-lg: 1rem; /* custom border radius */
+  /* fonts */
+  --font-Poppins: "Poppins", sans-serif;
+  
+}
+@layer base {
+  body {
+    font-family: var(--font-Poppins);
+    background-color: var(--color-ghostWhite);
+    color: var(--color-charcoal);
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    font-weight: 400;
+    color: var(--color-charcoal);
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button {
+    cursor: pointer;
+    font-family: var(--font-Poppins);
+  }
+  
+}
+@layer components {
+  .primary-btn {
+    @apply bg-charcoal hover:bg-grunge text-ghostWhite py-2 px-4 rounded shadow-sm hover:shadow-sm transition duration-300;
+  }
 }

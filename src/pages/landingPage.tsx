@@ -1,10 +1,10 @@
-import React from "react";
+import HeroSection from "../components/Hero/hero";
 
 const LandingPage = () => {
   return (
-    <div>
-      <h1 className="text-3xl text-brand font-bold underline">LandingPage</h1>
-    </div>
+   <>
+    <HeroSection />
+    </>
   );
 };
 
