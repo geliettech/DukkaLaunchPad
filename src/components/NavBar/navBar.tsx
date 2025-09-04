@@ -8,7 +8,7 @@ const NavBarLinks = [
   {
     id: 1,
     title: "Home",
-    Link: "/",
+    Link: "#",
   },
   {
     id: 2,
