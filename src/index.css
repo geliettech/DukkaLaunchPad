@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+@theme {
+/* Primary Colors */
+--color-lightCoral: #E97D80;    /* Key color (Light Coral / Rose Pink) */
+--color-ghostWhite: #FBFCFF;    /* onKey color (Ghost White) */
+--color-mistyRose: #F9D7D8;     /* Container color (Misty Rose / Pale Pink) */
+--color-darkMaroon: #411012;    /* onContainer color (Dark Maroon / Burgundy) */
+
+
+  /* Secondary Colors */
+--color-lavenderGray: #B3B3D8;  /* Key color (Lavender Gray / Light Periwinkle) */
+--color-ghostWhite: #FBFCFF;    /* onKey color (Ghost White) */
+--color-aliceBlue: #EFF1F9;     /* Container color (Alice Blue / Pale Lavender) */
+--color-charcoal: #2A2A44;      /* onContainer color (Charcoal Blue / Gunmetal) */
+
+    /* Secondary Colors 2 */
+--color-licorice: #231F20;      /* Key color (Licorice / Raisin Black) */
+--color-ghostWhite: #FBFCFF;    /* onKey color (Ghost White) */
+--color-thistle: #EAD4DA;       /* Container color (Thistle / Pale Mauve) */
+--color-licorice: #231F20;      /* onContainer color (Licorice / Raisin Black) */
+
+
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-heading: "Poppins", sans-serif;
+
+  --radius-lg: 1rem; /* custom border radius */
+}
