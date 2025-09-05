@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route index element={<LandingPage />} />
         <Route path="/Packages" element={<Packages />} />
-        <Route path="/Packages/:id" element={<PackageDetails />} />
+        <Route path="/Packages/:title" element={<PackageDetails />} />
       </Routes>
     </main>
   )

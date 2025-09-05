@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from "framer-motion";
 import { SlideUp } from "../utility/animation";
 import { Link } from "react-router";
@@ -7,7 +6,7 @@ import { Link } from "react-router";
 interface ButtonProps {
   text: string;
   className?: string;
-  to?: string;
+  to: string;
 }
 
 const Button: React.FC<ButtonProps> = ({text, className, to}) => {
@@ -18,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({text, className, to}) => {
               animate="animate"
               className={`primary-btn ${className || ""}`}
             >
-              <Link to={to}>{text}</Link>
+              <Link to={to || "#"}>{text}</Link>
     </motion.button>
   )
 }

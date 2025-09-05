@@ -1,11 +1,11 @@
 import HeroSection from "../components/HeroSection/hero";
-import Packages from "../components/packages/packages"
+import Packages from "../components/packages/packages";
 
 const LandingPage = () => {
   return (
-   <>
-    <HeroSection />
-    <Packages />
+    <>
+      <HeroSection />
+      <Packages />
     </>
   );
 };

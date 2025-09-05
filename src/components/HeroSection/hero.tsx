@@ -1,7 +1,7 @@
 import HeroSectionImg from "/hero-section/launchpad-1.png";
 import { motion } from "framer-motion";
 import { SlideUp } from "../../utility/animation";
-import Button from "../btn"
+import Button from "../btn";
 
 const HeroSection = () => {
   return (
@@ -31,12 +31,14 @@ const HeroSection = () => {
           </div>
           {/* Hero image Section */}
           <div className="flex justify-center items-center order-1 md:order-2">
-            <motion.img initial={{opacity: 0, x: 100}}
-            transition={{duration: 0.5, delay: 0.5,}}
-              animate={{opacity: 1, x: 0}}
+            <motion.img
+              initial={{ opacity: 0, x: 100 }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              animate={{ opacity: 1, x: 0 }}
               src={HeroSectionImg}
               className="w-full max-w-[978px] h-auto object-contain"
-              alt="launchpad 1" />
+              alt="launchpad 1"
+            />
           </div>
         </div>
       </div>
