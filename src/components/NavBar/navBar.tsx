@@ -47,7 +47,7 @@ const NavBar = () => {
   return (
     <motion.div variants={SlideBottom(0.2)}
               initial="initial"
-              animate="animate" className="container py-4 container flex justify-between items-center">
+              animate="animate" className="container py-4 flex justify-between items-center">
       {/* Logo section */}
       <div>
         <img src={logo} alt="logo" className="w-[70px]" />

@@ -29,6 +29,7 @@ const PackagesData = [
     id: nanoid(),
     PkgImg: "/packages/rhemacakes-whatsapp-1.png",
     title: "gold",
+    price: "₦",
     description: "This package includes essential features to get you started.",
     features: ["Feature A", "Feature B", "Feature C"],
   },
