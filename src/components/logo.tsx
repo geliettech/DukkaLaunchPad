@@ -1,9 +1,9 @@
-import logo from "/hero-section/launchpad-1.png";
+import logo from "/logo.png";
 
 const Logo = () => {
   return (
     <div>
-      <img src={logo} alt="logo" className="w-[70px]" />
+      <img src={logo} alt="logo" className="w-[120px]" />
     </div>
   );
 };

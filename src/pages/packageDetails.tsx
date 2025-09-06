@@ -3,67 +3,75 @@ import { useEffect, useState } from "react";
 import PackagesData from "../data/data";
 import { motion } from "framer-motion";
 import { SlideBottom } from "../utility/animation";
+import Button from "../components/btn";
 
 const PackageDetails = () => {
+  // Extract title parameter from the URL
   const { title } = useParams<{ title: string }>();
-  const [pkg, setPkg] = useState<any | null>(null);
+
+  // State variables to store data
+  const [pkgDetails, setPkgDetails] = useState<any | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // find the matching package by title
-    const foundPackage = PackagesData.find(
-      (item) => item.title.toLowerCase() === title?.toLowerCase()
-    );
-    setPkg(foundPackage || null);
+    if (title) {
+      const foundPackage = PackagesData.find(
+        (item) => item.title.toLowerCase() === title.toLowerCase()
+      );
+      setPkgDetails(foundPackage || null);
+    }
+    setLoading(false); // ✅ done checking
   }, [title]);
 
-  if (!pkg) {
+  if (loading) {
     return (
-      <div className="flex justify-center items-center h-screen">
-        <p className="text-lg font-semibold">Package not found 🚫</p>
+      <div className="flex items-center justify-center h-screen">
+        <p className="text-xl">Loading package...</p>
+      </div>
+    );
+  }
+
+  if (!pkgDetails) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <p className="text-xl">Package not found.</p>
       </div>
     );
   }
 
   return (
-    <motion.div
+    <motion.section
       variants={SlideBottom(0.2)}
       initial="initial"
       animate="animate"
-      className="container py-16"
+      className=""
     >
-      <div className="bg-ghostWhite shadow-lg rounded-xl p-8 md:p-12 space-y-6">
-        <div className="flex flex-col md:flex-row gap-10">
-          {/* Image */}
-          <div className="md:w-1/2">
-            <img
-              src={pkg.PkgImg}
-              alt={pkg.title}
-              className="w-full h-auto object-contain rounded-lg shadow-md"
-            />
-          </div>
+      <div className="container mx-auto x-axis-padding flex flex-col-reverse md:flex-row items-center justify-center md:justify-between min-h-screen">
+        {/* Content */}
+        <div className="">
+          <h1 className="capitalize font-bold text-3xl">
+            {pkgDetails.title} - {pkgDetails.price}
+          </h1>
 
-          {/* Content */}
-          <div className="md:w-1/2 flex flex-col space-y-6">
-            <h1 className="capitalize font-bold text-3xl text-charcoal">
-              {pkg.title}
-            </h1>
-            <p className="text-xl font-semibold text-gray-700">
-              Price: <span className="text-primary">{pkg.price}</span>
-            </p>
-            <p className="text-gray-600 leading-relaxed">{pkg.description}</p>
-
-            {/* Features (optional, if data includes features) */}
-            {pkg.features && (
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                {pkg.features.map((feature: string, idx: number) => (
-                  <li key={idx}>{feature}</li>
-                ))}
-              </ul>
-            )}
+          {/* Features  */}
+          <div className="list-disc list-inside text-gray-700 space-y-2">
+            {pkgDetails.features.map((feature: string, idx: number) => (
+                <h4 key={idx}>{feature}</h4>
+            ))}
           </div>
+          <Button className="" text="Get Started" to={"#"} />
+        </div>
+
+        {/* Image */}
+        <div className="">
+          <img
+            src={pkgDetails.PkgImg}
+            alt={pkgDetails.title}
+            className="h-auto w-full object-cover max-h-[602px] max-w-[602px]"
+          />
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 
