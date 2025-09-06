@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-import PackagesData from "./data"
+import PackagesData from "../../data/data"
 import Button from "../btn"
 import {motion} from "framer-motion";
 import { SlideBottom } from "../../utility/animation";

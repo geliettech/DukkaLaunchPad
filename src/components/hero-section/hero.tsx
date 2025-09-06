@@ -27,7 +27,7 @@ const HeroSection = () => {
               The easiest, fastest, and most secure way for you to launch,
               register and grow your business in Nigeria.
             </motion.p>
-            <Button text="View Packages" to="#packages" />
+            <Button text="View Packages" to="#" />
           </div>
           {/* Hero image Section */}
           <div className="flex justify-center items-center order-1 md:order-2">

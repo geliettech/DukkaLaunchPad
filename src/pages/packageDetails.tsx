@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
-import PackagesData from "../components/packages/data";
+import PackagesData from "../data/data";
 import { motion } from "framer-motion";
 import { SlideBottom } from "../utility/animation";
 

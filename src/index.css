@@ -24,6 +24,7 @@
   --font-Poppins: "Poppins", sans-serif;
   
 }
+/* base style */
 @layer base {
   body {
     font-family: var(--font-Poppins);
@@ -43,11 +44,18 @@
     font-family: var(--font-Poppins);
   }
 }
+/* components style: multiple css properties */
 @layer components {
   .primary-btn {
     @apply bg-charcoal hover:bg-grunge text-ghostWhite py-2 px-4 rounded shadow-sm hover:shadow-sm transition duration-300;
   }
   .container{
     @apply mx-auto px-[1rem] sm:px-[2rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[6rem];
+  }
+}
+/* utilities style: one functionality */
+@layer utilities {
+  .border{
+    @apply border-8 border-b-lightcoral
   }
 }
