@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 const NavBarLinks = [
   {
@@ -43,12 +43,12 @@ const NavBar = () => {
     <ul className="flex gap-3 xl:gap-7">
       {NavBarLinks.map((link) => (
         <li key={link.id}>
-          <Link
+          <NavLink
             to={link.Link}
             className="hover:text-lightcoral transition duration-300 text-sm xl:text-base"
           >
             {link.title}
-          </Link>
+          </NavLink>
         </li>
       ))}
     </ul>

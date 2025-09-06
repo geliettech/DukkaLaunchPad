@@ -2,7 +2,11 @@
 
 const RecommendedPackages = () => {
   return (
-    <div>RecommendedPackages</div>
+    <section>
+        <div className="container mx-auto x-axis-padding">
+            RecommendedPackages
+        </div>
+    </section>
   )
 }
 

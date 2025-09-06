@@ -2,7 +2,11 @@
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+        <div className="container mx-auto x-axis-padding">
+            Footer
+        </div>
+    </footer>
   )
 }
 

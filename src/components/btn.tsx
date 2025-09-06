@@ -9,18 +9,17 @@ interface ButtonProps {
   to: string;
 }
 
-const Button: React.FC<ButtonProps> = ({text, className, to}) => {
+const Button: React.FC<ButtonProps> = ({ text, className, to }) => {
   return (
-     <motion.button
-              variants={SlideUp(0.2)}
-              initial="initial"
-              animate="animate"
-              className={`primary-btn ${className || ""}`}
-            >
-              <Link to={to || "#"}>{text}</Link>
+    <motion.button
+      variants={SlideUp(0.2)}
+      initial="initial"
+      animate="animate"
+      className={`primary-btn ${className || ""}`}
+    >
+      <Link to={to || "#"}>{text}</Link>
     </motion.button>
-  )
-}
+  );
+};
 
-
-export default Button
+export default Button;
