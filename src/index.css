@@ -24,14 +24,17 @@
 }
 /* base style */
 @layer base {
+  #root, *{
+       margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   html,
   body {
     font-family: var(--font-Poppins);
     background-color: var(--color-ghostWhite);
     color: var(--color-charcoal);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
   }
   h1,
   h2,

@@ -7,7 +7,7 @@ const LandingPage = () => {
   return (
     <div className="">
       <HeroSection />
-      <div className="bg-[url('/hero-section/background-1.png')] bg-cover bg-center bg-no-repeat overflow-hidden py-32 space-y-32">
+      <div className="bg-[url('/hero-section/background-1.png')] bg-cover bg-center bg-no-repeat py-32 space-y-32">
         <RecommendedPackages />
         <Packages />
         <Terminal />
