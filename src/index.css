@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -22,19 +21,25 @@
 
   /* fonts */
   --font-Poppins: "Poppins", sans-serif;
-  
 }
 /* base style */
 @layer base {
-  html, body, #root {
+  html,
+  body {
     font-family: var(--font-Poppins);
     background-color: var(--color-ghostWhite);
     color: var(--color-charcoal);
     margin: 0;
-  padding: 0;
-  height: 100%;
+    padding: 0;
+    box-sizing: border-box;
   }
-  h1, h2, h3, h4, h5, h6, p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     font-weight: 400;
     color: var(--color-charcoal);
   }
@@ -53,13 +58,13 @@
   .primary-btn {
     @apply bg-charcoal hover:bg-grunge text-ghostWhite text-base font-medium py-2 px-4 rounded shadow-sm hover:shadow-sm transition duration-300;
   }
-  .x-axis-padding{
+  .x-axis-padding {
     @apply mx-auto px-[1rem] sm:px-[2rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[6rem];
   }
 }
 /* utilities style: one functionality */
 @layer utilities {
-  .border{
-    @apply border-8 border-b-lightcoral
+  .border {
+    @apply border-8 border-b-lightcoral;
   }
 }
