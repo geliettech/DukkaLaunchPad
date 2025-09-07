@@ -6,10 +6,12 @@ interface LogoProps {
   to: string;
 }
 
-const Logo: React.FC<LogoProps>  = ({to}) => {
+const Logo: React.FC<LogoProps> = ({ to }) => {
   return (
     <div>
-      <Link to={to || "#"}><img src={logo} alt="logo" className="w-[120px]" /></Link>
+      <Link to={to || "#"}>
+        <img src={logo} alt="logo" className="w-[120px]" />
+      </Link>
     </div>
   );
 };

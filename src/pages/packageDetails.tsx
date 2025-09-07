@@ -56,7 +56,7 @@ const PackageDetails = () => {
           {/* Features  */}
           <div className="">
             {pkgDetails.features.map((feature: string, idx: number) => (
-                <h4 key={idx}>{feature}</h4>
+              <h4 key={idx}>{feature}</h4>
             ))}
           </div>
           <Button className="" text="Get Started" to={""} />
