@@ -34,7 +34,7 @@ const NavBarLinks = [
   {
     id: 7,
     title: "LaunchPad",
-    Link: "/Packages",
+    Link: "#",
   },
 ];
 

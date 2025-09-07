@@ -4,7 +4,7 @@ import Cart from "../cart";
 import { motion } from "framer-motion";
 import { SlideBottom } from "../../utility/animation";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header>
       <motion.div
@@ -14,7 +14,7 @@ const Header = () => {
         className="container mx-auto x-axis-padding flex justify-between items-center py-4"
       >
         {/* Logo section */}
-        <Logo />
+        <Logo to="/" />
         {/* Links section */}
         <div className="md:block hidden">
           <NavBar />

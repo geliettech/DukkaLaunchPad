@@ -1,9 +1,15 @@
 import logo from "/logo.png";
+import { Link } from "react-router";
 
-const Logo = () => {
+// Define props with TypeScript interface
+interface LogoProps {
+  to: string;
+}
+
+const Logo: React.FC<LogoProps>  = ({to}) => {
   return (
     <div>
-      <img src={logo} alt="logo" className="w-[120px]" />
+      <Link to={to || "#"}><img src={logo} alt="logo" className="w-[120px]" /></Link>
     </div>
   );
 };

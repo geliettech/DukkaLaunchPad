@@ -48,18 +48,18 @@ const PackageDetails = () => {
     >
       <div className="container mx-auto x-axis-padding flex flex-col-reverse md:flex-row items-center justify-center md:justify-between min-h-screen">
         {/* Content */}
-        <div className="">
+        <div className="space-y-4">
           <h1 className="capitalize font-bold text-3xl">
             {pkgDetails.title} - {pkgDetails.price}
           </h1>
 
           {/* Features  */}
-          <div className="list-disc list-inside text-gray-700 space-y-2">
+          <div className="">
             {pkgDetails.features.map((feature: string, idx: number) => (
                 <h4 key={idx}>{feature}</h4>
             ))}
           </div>
-          <Button className="" text="Get Started" to={"#"} />
+          <Button className="" text="Get Started" to={""} />
         </div>
 
         {/* Image */}

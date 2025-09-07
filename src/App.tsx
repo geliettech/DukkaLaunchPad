@@ -1,5 +1,5 @@
 import LandingPage from './pages/landingPage'
-import Packages from "./components/packages/packages.tsx"
+// import Packages from "./components/packages/packages.tsx"
 import PackageDetails from "./pages/packageDetails"
 import { Routes, Route } from "react-router";
 // import NavBar from './components/navBar.tsx';
@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route index element={<LandingPage />} />
-        <Route path="/Packages" element={<Packages />} />
+        {/* <Route path="/Packages" element={<Packages />} /> */}
         <Route path="/Packages/:title" element={<PackageDetails />} />
       </Routes>
       <Footer />

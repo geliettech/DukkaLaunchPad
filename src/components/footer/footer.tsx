@@ -1,6 +1,6 @@
 
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer>
         <div className="container mx-auto x-axis-padding">

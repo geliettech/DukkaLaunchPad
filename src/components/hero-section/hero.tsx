@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import { SlideUp } from "../../utility/animation";
 import Button from "../btn";
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <section className="bg-[url('/hero-section/background-1.png')] bg-cover bg-center bg-no-repeat">
-      <div className="container mx-auto x-axis-padding flex justify-between items-center flex-col-reverse md:flex-row min-h-[400px]">
+      <div className="container mx-auto x-axis-padding flex justify-between items-center flex-col-reverse md:flex-row min-h-[600px]">
         {/* Text Content Section */}
         <div className="space-y-5 text-center md:text-left py-10 md:py-0 md:pr-30">
           <motion.h1
@@ -22,7 +22,7 @@ const HeroSection = () => {
             The easiest, fastest, and most secure way for you to launch,
             register and grow your business in Nigeria.
           </motion.p>
-          <Button text="View Packages" to="#" />
+          <Button text="View Packages" to="" />
         </div>
         {/* Hero image Section */}
         <div className="">
