@@ -1,5 +1,5 @@
 import HeroSection from "../components/hero-section/hero";
-import NewsLetter from "../components/terminal/terminal";
+import Terminal from "../components/terminal/terminal";
 import Packages from "../components/packages/packages";
 import RecommendedPackages from "../components/recommended-packages/recommedations";
 
@@ -9,9 +9,9 @@ const LandingPage = () => {
       <HeroSection />
       <div className="bg-[url('/hero-section/background-1.png')] bg-cover bg-center bg-no-repeat overflow-hidden py-32 space-y-32">
         <RecommendedPackages />
-      <Packages />
+        <Packages />
+        <Terminal />
       </div>
-      <NewsLetter />
     </div>
   );
 };
