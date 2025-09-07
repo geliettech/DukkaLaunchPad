@@ -24,11 +24,11 @@ const Footer: React.FC = () => {
         </div>
         {/* menu */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 space-y-8 md:space-y-0">
-          <div className="text-ghostWhite">
+          <div className="">
             <Link to="/">
               <img src={FooterLogo} alt="logo" className="w-[34px] h-[34px]" />
             </Link>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 text-ghostWhite mt-2">
               <Link to="#">X</Link>
               <Link to="#">Ig</Link>
               <Link to="#">Li</Link>
