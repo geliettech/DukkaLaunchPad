@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
         {/* menu */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 space-y-8 md:space-y-0">
           <div className="">
-            <Link to="/">
+            <Link to="#">
               <img src={FooterLogo} alt="logo" className="w-[34px] h-[34px]" />
             </Link>
             <div className="flex space-x-4 text-ghostWhite mt-2">
@@ -36,20 +36,20 @@ const Footer: React.FC = () => {
           </div>
           <div className="text-ghostWhite flex flex-col space-y-2">
             <h4 className="text-ghostWhite">Company</h4>
-            <Link to="">About</Link>
-            <Link to="">Contact us</Link>
-            <Link to="">Ambassadors</Link>
-            <Link to="">Partners</Link>
-            <Link to="">Career</Link>
-            <Link to="">Loans</Link>
+            <Link to="#">About</Link>
+            <Link to="#">Contact us</Link>
+            <Link to="#">Ambassadors</Link>
+            <Link to="#">Partners</Link>
+            <Link to="#">Career</Link>
+            <Link to="#">Loans</Link>
           </div>
           <div className="text-ghostWhite flex flex-col space-y-2">
             <h4 className="text-ghostWhite">Legal</h4>
-            <Link to="">Terms</Link>
-            <Link to="">Balance T & C</Link>
-            <Link to="">Terminals T & C</Link>
-            <Link to="">Privacy</Link>
-            <Link to="">Product Manual</Link>
+            <Link to="#">Terms</Link>
+            <Link to="#">Balance T & C</Link>
+            <Link to="#">Terminals T & C</Link>
+            <Link to="#">Privacy</Link>
+            <Link to="#">Product Manual</Link>
           </div>
         </div>
         {/* copy right */}

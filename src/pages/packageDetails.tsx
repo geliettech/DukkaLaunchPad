@@ -55,12 +55,12 @@ const PackageDetails = () => {
 
           {/* Features  */}
           <div className="space-y-4">
-            <p></p>
             {pkgDetails.features.map((feature: string, idx: number) => (
               <p key={idx}>{feature}</p>
             ))}
           </div>
           <Button className="" text="Get Started" to={""} />
+          {/* <Button className="" text="Get Started" to={`/Packages/${pkgDetails.title}/form`} /> */}
         </div>
 
         {/* Image */}
