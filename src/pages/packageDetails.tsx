@@ -59,8 +59,8 @@ const PackageDetails = () => {
               <p key={idx}>{feature}</p>
             ))}
           </div>
-          <Button className="" text="Get Started" to={""} />
-          {/* <Button className="" text="Get Started" to={`/Packages/${pkgDetails.title}/form`} /> */}
+          {/* <Button className="" text="Get Started" to={""} /> */}
+          <Button className="" text="Get Started" to={`/Packages/${pkgDetails.title}/form`} />
         </div>
 
         {/* Image */}

@@ -66,8 +66,8 @@
   }
 }
 /* utilities style: one functionality */
-@layer utilities {
+/* @layer utilities {
   .border {
     @apply border-8 border-b-lightcoral;
   }
-}
+} */
