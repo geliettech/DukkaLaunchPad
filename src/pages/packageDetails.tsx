@@ -46,7 +46,7 @@ const PackageDetails = () => {
       animate="animate"
       className=""
     >
-      <div className="container mx-auto x-axis-padding flex flex-col-reverse md:flex-row items-center justify-center md:justify-between min-h-screen">
+      <div className="py-8 md:py-2 container mx-auto x-axis-padding flex flex-col-reverse md:flex-row items-center justify-center md:justify-between min-h-screen gap-8 md:gap-28">
         {/* Content */}
         <div className="space-y-4">
           <h1 className="capitalize font-bold text-3xl">
@@ -54,9 +54,10 @@ const PackageDetails = () => {
           </h1>
 
           {/* Features  */}
-          <div className="">
+          <div className="space-y-4">
+            <p></p>
             {pkgDetails.features.map((feature: string, idx: number) => (
-              <h4 key={idx}>{feature}</h4>
+              <p key={idx}>{feature}</p>
             ))}
           </div>
           <Button className="" text="Get Started" to={""} />
