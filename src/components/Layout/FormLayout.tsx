@@ -1,11 +1,5 @@
 import { NavLink, Outlet, useParams } from "react-router";
 
-// const steps = [
-//   { path: "/Packages/:title/form/business-details", label: "Business Details" },
-//   { path: "/Packages/:title/form/contact-details", label: "Contact Details" },
-//   { path: "/Packages/:title/form/attach-catalog", label: "Attach Catalog" },
-//   { path: "/Packages/:title/form/business-registration", label: "Business Registration" },
-// ];
 
 const Layout = () => {
   const { title } = useParams(); // get :title from the route

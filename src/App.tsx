@@ -16,6 +16,7 @@ const App = () => {
       <Routes>
         <Route index element={<LandingPage />} />
         <Route path="/Packages/:title" element={<PackageDetails />} />
+
         <Route path="/Packages/:title/form" element={<Layout />}>
           <Route index element={<Navigate to="business-details" replace />} />
           <Route path="business-details" element={<BusinessDetails />} />
